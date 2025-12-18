@@ -1,0 +1,18 @@
+/* events-frontend/src/index.css */
+
+body {
+  margin: 0;
+  /* --- REPLACED FONT FAMILY --- */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  /* -------------------------- */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa; /* Optional: Light gray background for a clean look */
+}
+
+/* Optional: Add bolding to main headings for better hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; /* Semi-bold weight for prominence */
+}
