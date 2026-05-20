@@ -10,7 +10,7 @@ CORS(app) # Enable CORS for all routes (allows React frontend to connect)
 # --- Configuration ---
 # 🔑 CRITICAL: REPLACE THIS LINE with your actual MongoDB Atlas connection string
 # Use your confirmed password here!
-MONGO_URI = "mongodb+srv://1ms23is141_db_user:airbusa380@cluster0.zwtr0zl.mongodb.net/?appName=Cluster0"
+MONGO_URI = "mongodb+srv://1ms23is141_db_user:Varun123@cluster0.zwtr0zl.mongodb.net/?appName=Cluster0"
 DB_NAME = "DepartmentEventsDB"
 
 # --- Database Connection ---
