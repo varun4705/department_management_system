@@ -1,0 +1,90 @@
+# ==========================================
+# Node.js / JavaScript Dependencies & Builds
+# ==========================================
+node_modules/
+/dist
+/build
+/out
+.npm
+*.log
+.eslintcache
+.cache/
+
+# Frontend Framework Caches (if applicable)
+.next/
+.nuxt/
+.svelte-kit/
+
+# ==========================================
+# Python Artifacts & Virtual Environments
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+/develop-eggs/
+/eggs/
+/lib/
+/lib64/
+/parts/
+/sdist/
+/var/
+/wheels/
+/share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.nosexycache
+.tox/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# ==========================================
+# Environment Secrets & Credentials
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# ==========================================
+# IDEs and Text Editors
+# ==========================================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
