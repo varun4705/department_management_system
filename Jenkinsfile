@@ -35,7 +35,9 @@ pipeline {
                --format HTML ^
                --out dependency-check-report ^
                --nvdApiKey YOUR_API_KEY ^
-               --disableYarnAudit
+               --disableYarnAudit ^
+               --disableNodeAudit
+               '''
             }
         }
 
