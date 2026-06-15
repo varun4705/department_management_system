@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 
 // The URL for your Flask Backend's READ endpoint
 // const API_URL = 'http://127.0.0.1:5000/events'; 
-const API_URL = 'https://department-management-system-haly.onrender.com/events'; 
+// const API_URL = 'https://department-management-system-haly.onrender.com/events'; 
+
+const API_URL =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1"
+    ? "http://127.0.0.1:5000/events"
+    : "https://department-management-system-haly.onrender.com/events";
 
 const EventList = () => {
     const [events, setEvents] = useState([]);

@@ -76,7 +76,9 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t department-management-system .'
+                dir('backend'){
+                    bat 'docker build -t department-management-system .'
+                }
             }
         }
 
@@ -88,7 +90,6 @@ pipeline {
                 bat '''
                 docker run -d ^
                 --name department-management-container ^
-                -p 3000:3000 ^
                 -p 5000:5000 ^
                 department-management-system
                 '''

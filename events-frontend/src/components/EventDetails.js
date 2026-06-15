@@ -2,7 +2,13 @@ import React, { useEffect, useState, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 // const API_BASE_URL = 'http://127.0.0.1:5000/events'; 
-const API_BASE_URL = 'https://department-management-system-haly.onrender.com/events'; 
+// const API_BASE_URL = 'https://department-management-system-haly.onrender.com/events'; 
+
+const API_URL =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1"
+    ? "http://127.0.0.1:5000/events"
+    : "https://department-management-system-haly.onrender.com/events";
 
 const EventDetails = () => {
     const { id } = useParams();
