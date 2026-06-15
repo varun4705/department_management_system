@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
-const API_BASE_URL = 'http://127.0.0.1:5000/events'; 
+// const API_BASE_URL = 'http://127.0.0.1:5000/events'; 
+const API_BASE_URL = 'https://department-management-system-haly.onrender.com/events'; 
 
 const EventDetails = () => {
     const { id } = useParams();

@@ -3,14 +3,17 @@ from pymongo import MongoClient
 from bson.objectid import ObjectId
 from bson.json_util import dumps
 from flask_cors import CORS
+import os
 
 app = Flask(__name__)
 CORS(app) # Enable CORS for all routes (allows React frontend to connect)
 # --- Configuration ---
 # 🔑 CRITICAL: REPLACE THIS LINE with your actual MongoDB Atlas connection string
 # Use your confirmed password here!
-MONGO_URI = "mongodb+srv://1ms23is141_db_user:ihve4acc@cluster0.zwtr0zl.mongodb.net/?retryWrites=true&w=majority"
-DB_NAME = "DepartmentEventsDB"
+# MONGO_URI = "mongodb+srv://1ms23is141_db_user:ihve4acc@cluster0.zwtr0zl.mongodb.net/?retryWrites=true&w=majority"
+# DB_NAME = "DepartmentEventsDB"
+MONGO_URI = os.getenv("MONGO_URI")
+DB_NAME = os.getenv("DB_NAME")
 
 # --- Database Connection ---
 try:
