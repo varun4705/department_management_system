@@ -6,7 +6,6 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app) # Enable CORS for all routes (allows React frontend to connect)
-
 # --- Configuration ---
 # 🔑 CRITICAL: REPLACE THIS LINE with your actual MongoDB Atlas connection string
 # Use your confirmed password here!
