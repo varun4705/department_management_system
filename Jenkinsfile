@@ -30,12 +30,12 @@ pipeline {
             steps {
                 bat '''
                 "C:\\DevOps\\dependency check\\dependency-check\\bin\\dependency-check.bat" ^
-                --project "Department_Management_System" ^
-                --scan . ^
-                --format HTML ^
-                --out dependency-check-report ^
-                --nvdApiKey 8ad5e391-833e-4d9d-8d20-b3bb37424e83
-                '''
+               --project "Department_Management_System" ^
+               --scan . ^
+               --format HTML ^
+               --out dependency-check-report ^
+               --nvdApiKey YOUR_API_KEY ^
+               --disableYarnAudit
             }
         }
 
