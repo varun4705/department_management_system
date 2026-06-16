@@ -91,6 +91,7 @@ pipeline {
                 docker run -d ^
                 --name department-management-container ^
                 -p 5000:5000 ^
+                --env-file .env ^  
                 department-management-system
                 '''
             }
