@@ -87,13 +87,7 @@ pipeline {
                 bat 'docker stop department-management-container || exit /b 0'
                 bat 'docker rm department-management-container || exit /b 0'
 
-                bat '''
-                docker run -d ^
-                --name department-management-container ^
-                -p 5000:5000 ^
-                --env-file .env ^  
-                department-management-system
-                '''
+                bat 'docker run -d --name department-management-container -p 5000:5000 department-management-system'
             }
         }
 
